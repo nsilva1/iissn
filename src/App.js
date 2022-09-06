@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+// component imports
+import TopNav from "./components/common/TopNav";
+import HomePage from "./components/pages/home/HomePage";
+import PersonalRegistration from "./components/pages/registration/PersonalRegistration";
+import OrganizationRegistration from "./components/pages/registration/OrganizationRegistration";
+
+// stylesheet import
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <TopNav />
+      {/*  */}
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        {/* <Route path="/about" element={<About />} /> */}
+        {/* <Route path="/registration" element={<Registration />} /> */}
+        <Route
+          path="/personal-registration"
+          element={<PersonalRegistration />}
+        />
+        <Route
+          path="/organization-registration"
+          element={<OrganizationRegistration />}
+        />
+      </Routes>
+      {/* <Footer /> */}
+    </BrowserRouter>
   );
 }
 
