@@ -22,9 +22,9 @@ const OrganizationRegistration = () => {
               Registration Successful!
             </div>
           )}
-          <div className="col-md-10 col-sm-10 my-5">
+          <div className="col-md-6 col-sm-12 my-5">
             <form
-              name="personal-registration"
+              name="organization-registration"
               data-netlify="true"
               method="POST"
               action="/organization-registration/?success=true"
@@ -32,7 +32,7 @@ const OrganizationRegistration = () => {
               <input
                 type="hidden"
                 name="form-name"
-                value="personal-registration"
+                value="organization-registration"
               />
 
               <label>Name</label>
