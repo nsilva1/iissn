@@ -136,6 +136,9 @@ const OrganizationRegistration = () => {
               </select>
               <label>How did you hear about us</label>
               <input className="form-control" type="text" name="hear" />
+              <button className="btn btn-dark d-block" type="submit">
+                Submit
+              </button>
             </form>
           </div>
         </div>
