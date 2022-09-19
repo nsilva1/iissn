@@ -5,7 +5,7 @@ import camera from "../../images/camera.jpg";
 
 const ShortAbout = () => {
   return (
-    <>
+    <div className="my-3">
       <Row>
         <Col xs={12} md={6}>
           <div className="">
@@ -31,7 +31,7 @@ const ShortAbout = () => {
           <img src={camera} alt="Industrial Security" width="100%" />
         </Col>
       </Row>
-    </>
+    </div>
   );
 };
 

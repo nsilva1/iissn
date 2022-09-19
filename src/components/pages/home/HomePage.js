@@ -3,6 +3,7 @@ import { Container } from "react-bootstrap";
 import Services from "./Services";
 import ShortAbout from "./ShortAbout";
 import TopCarousel from "./TopCarousel";
+import UpcomingEvents from "./UpcomingEvents";
 
 const HomePage = () => {
   return (
@@ -19,6 +20,9 @@ const HomePage = () => {
         <Container>
           <ShortAbout />
         </Container>
+      </div>
+      <div style={{ backgroundColor: "#f5f5f5" }}>
+        <UpcomingEvents />
       </div>
     </>
   );
