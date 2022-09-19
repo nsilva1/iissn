@@ -3,9 +3,23 @@
   background-size: cover;
 }
 
+/* .carousel-image {
+	height: '300px';
+} */
+
 /* for mobile */
 @media screen and (max-width: 767px) {
 	.top-nav {
 		display: none;
+	}
+
+	.carousel-image {
+		height: '100%';
+	}
+
+	.top-logo {
+		display: block;
+  		margin-left: auto;
+  		margin-right: auto;
 	}
 }

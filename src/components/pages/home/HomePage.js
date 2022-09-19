@@ -1,13 +1,12 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import TopCarousel from "./TopCarousel";
 
 const HomePage = () => {
   return (
     <>
       <div className="top" style={{ marginTop: "7rem" }}>
-        <div className="home-image">
-          <h2 className="display-4">Security</h2>
-        </div>
+        <TopCarousel />
       </div>
       <div>
         <Container></Container>

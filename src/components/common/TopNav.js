@@ -8,7 +8,7 @@ const TopNav = () => {
     <>
       <Navbar bg="light" fixed="top">
         <Container>
-          <Navbar.Brand href="/">
+          <Navbar.Brand className="top-logo" href="/">
             <img src={logo} alt="logo" height={80} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -21,7 +21,7 @@ const TopNav = () => {
                 <Link
                   style={{
                     textDecoration: "none",
-                    color: "black",
+                    color: "green",
                     fontWeight: "bold",
                   }}
                   to="/about"
@@ -33,19 +33,67 @@ const TopNav = () => {
                 <Link
                   style={{
                     textDecoration: "none",
-                    color: "black",
+                    color: "green",
                     fontWeight: "bold",
                   }}
-                  to="/registration"
+                  to="/"
                 >
-                  Registration
+                  Membership
                 </Link>
               </Nav.Item>
               <Nav.Item className="mx-3 my-1">
                 <Link
                   style={{
                     textDecoration: "none",
-                    color: "black",
+                    color: "green",
+                    fontWeight: "bold",
+                  }}
+                  to="/"
+                >
+                  Training & Certifications
+                </Link>
+              </Nav.Item>
+              <Nav.Item className="mx-3 my-1">
+                <Link
+                  style={{
+                    textDecoration: "none",
+                    color: "green",
+                    fontWeight: "bold",
+                  }}
+                  to="/"
+                >
+                  News & Events
+                </Link>
+              </Nav.Item>
+              <Nav.Item className="mx-3 my-1">
+                <Link
+                  style={{
+                    textDecoration: "none",
+                    color: "green",
+                    fontWeight: "bold",
+                  }}
+                  to="/"
+                >
+                  Services
+                </Link>
+              </Nav.Item>
+              {/* <Nav.Item className="mx-3 my-1">
+                <Link
+                  style={{
+                    textDecoration: "none",
+                    color: "green",
+                    fontWeight: "bold",
+                  }}
+                  to="/registration"
+                >
+                  Registration
+                </Link>
+              </Nav.Item> */}
+              <Nav.Item className="mx-3 my-1">
+                <Link
+                  style={{
+                    textDecoration: "none",
+                    color: "green",
                     fontWeight: "bold",
                   }}
                   to="/contact-us"
