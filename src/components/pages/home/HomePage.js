@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import Services from "./Services";
+import ShortAbout from "./ShortAbout";
 import TopCarousel from "./TopCarousel";
 
 const HomePage = () => {
@@ -12,6 +13,11 @@ const HomePage = () => {
       <div>
         <Container>
           <Services />
+        </Container>
+      </div>
+      <div>
+        <Container>
+          <ShortAbout />
         </Container>
       </div>
     </>
