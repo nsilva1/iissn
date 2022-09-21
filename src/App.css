@@ -3,9 +3,9 @@
   background-size: cover;
 }
 
-/* .carousel-image {
-	height: '300px';
-} */
+.about-header {
+	background-image: linear-gradient(to right, green, white);
+}
 
 /* for mobile */
 @media screen and (max-width: 767px) {
@@ -25,5 +25,9 @@
 
 	.about-image {
 		display: none;
+	}
+
+	.about-header-text {
+		margin-top: '5rem';
 	}
 }

@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import TopNav from "./components/common/TopNav";
 import Footer from "./components/common/Footer";
 import HomePage from "./components/pages/home/HomePage";
+import About from "./components/pages/about/About";
 import PersonalRegistration from "./components/pages/registration/PersonalRegistration";
 import OrganizationRegistration from "./components/pages/registration/OrganizationRegistration";
 
@@ -17,7 +18,7 @@ function App() {
       <TopNav />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        {/* <Route path="/about" element={<About />} /> */}
+        <Route path="/about" element={<About />} />
         {/* <Route path="/registration" element={<Registration />} /> */}
         <Route
           path="/personal-registration"
